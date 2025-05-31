@@ -61,7 +61,7 @@ CORS(app)
 # Hardcoded for now (ideally use os.getenv and environment variables)
 TENANT_ID = "cb26282a-9ed2-4db5-be73-ba9a4a76d474"
 CLIENT_ID = "9ee7b786-3135-40b9-a43a-7c91af437c24"
-CLIENT_SECRET = "8cdc4fee-e62b-45c5-a65d-dd9ba1147965"
+CLIENT_SECRET = "OUd8Q~8WFXp_vAVtlXH79b.Y.cgJLT3FnnzjTalb"
 POWER_AUTOMATE_URL = "https://cc552f5bc566e779901470aa8ccbed.d7.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/0ab258097fc64362af63c569438539c2/triggers/manual/paths/invoke/?api-version=1&tenantId=tId&environmentName=cc552f5b-c566-e779-9014-70aa8ccbedd7"
 
 def get_access_token():
