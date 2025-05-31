@@ -59,6 +59,7 @@ def transcribe():
         payload = {
             "transcript": transcript,
             "sentiment": sentiment_label,
+            "title": title,
             "priority": priority
         }
 
