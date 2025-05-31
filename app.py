@@ -26,6 +26,14 @@ def get_access_token():
     response = requests.post(url, headers=headers, data=data)
     response.raise_for_status()
     return response.json()["access_token"]
+    
+def generate_title(transcript):
+    if not transcript.strip():
+        return "Voice Case"
+    # Take first sentence or first 7 words, whichever feels meaningful
+    first_sentence = transcript.split('.')[0]
+    words = first_sentence.strip().split()
+    return " ".join(words[:7]) + ("..." if len(words) > 7 else "")    
 
 @app.route('/transcribe', methods=['POST'])
 def transcribe():
@@ -39,7 +47,8 @@ def transcribe():
 
     # Priority check
     priority = "High" if any(word in transcript.lower() for word in ["urgent", "asap", "immediately"]) else "Normal"
-
+     # Generate title
+    title = generate_title(transcript)
     try:
         token = get_access_token()
         headers = {
