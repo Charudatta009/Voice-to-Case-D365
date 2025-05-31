@@ -55,7 +55,7 @@ def transcribe():
 
         response = requests.post(POWER_AUTOMATE_URL, headers=headers, json=payload)
 
-        print("Power Automate response:", response.status_code, response.text)
+        # print("Power Automate response:", response.status_code, response.text)
 
         if response.status_code in [200, 202]:
             return jsonify({
