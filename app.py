@@ -33,6 +33,9 @@ def transcribe():
         "priority": priority
     })
 
+    print("Power Automate response:", response.status_code, response.text)
+
+
     return jsonify({"message": "Sent to D365",
         "status": response.status_code,
         "sentiment": sentiment_label,
