@@ -33,7 +33,10 @@ def transcribe():
         "priority": priority
     })
 
-    return jsonify({"message": "Sent to D365", "status": response.status_code})
+    return jsonify({"message": "Sent to D365",
+        "status": response.status_code,
+        "sentiment": sentiment_label,
+        "priority": priority})
 
 @app.route('/', methods=['GET'])
 def home():
