@@ -35,5 +35,10 @@ def transcribe():
 
     return jsonify({"message": "Sent to D365", "status": response.status_code})
 
+@app.route('/', methods=['GET'])
+def home():
+    return "✅ Voice-to-Case-D365 API is running."
+    
+
 if __name__ == '__main__':
     app.run(debug=True)
