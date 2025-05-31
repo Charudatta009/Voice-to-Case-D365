@@ -4,8 +4,9 @@ import os
 from textblob import TextBlob
 
 app = Flask(__name__)
+CORS(app)
 
-# Replace this with your actual Power Automate URL
+
 POWER_AUTOMATE_URL = os.getenv("POWER_AUTOMATE_URL", "https://cc552f5bc566e779901470aa8ccbed.d7.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/0ab258097fc64362af63c569438539c2/triggers/manual/paths/invoke/?api-version=1&tenantId=tId&environmentName=cc552f5b-c566-e779-9014-70aa8ccbedd7")
 
 @app.route('/transcribe', methods=['POST'])
