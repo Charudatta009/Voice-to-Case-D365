@@ -86,7 +86,7 @@
         const response = await fetch("https://voice-to-case-d365.onrender.com/transcribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ title: "Voice Case", description: text })
+          body: JSON.stringify({ transcript: text })
         });
 
         const result = await response.json();
