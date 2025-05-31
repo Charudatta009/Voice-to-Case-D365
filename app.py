@@ -73,7 +73,7 @@ def get_access_token():
         "grant_type": "client_credentials",
         "client_id": CLIENT_ID,
         "client_secret": CLIENT_SECRET,
-        "scope": "https://service.flow.microsoft.com/.default"
+        "scope": "https://service.flow.microsoft.com//.default"
     }
     response = requests.post(url, headers=headers, data=data)
     response.raise_for_status()
