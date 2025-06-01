@@ -70,6 +70,8 @@ def transcribe():
         if response.status_code in [200, 202]:
             return jsonify({
                 "message": "✅ Case created in D365",
+                "transcript": transcript,
+                "title": title,
                 "status": response.status_code,
                 "sentiment": sentiment_label,
                 "priority": priority
