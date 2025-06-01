@@ -93,6 +93,8 @@
 
         if (response.ok) {
           status.innerText = `✅ Case created! Sentiment: ${result.sentiment}, Priority: ${result.priority}`;
+          console.log(result); // ← Add this line
+
         } else {
           status.innerText = `❌ Failed: ${result.error}`;
         }
