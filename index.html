@@ -77,7 +77,18 @@
       startBtn.disabled = false;
       stopBtn.disabled = true;
       status.innerText = "Status: Processing...";
+      // transcriptDiv.innerText = `You said:\n${transcriptText}`;
+      setTimeout(() => {
       transcriptDiv.innerText = `You said:\n${transcriptText}`;
+
+      if (!transcriptText.trim()) {
+      status.innerText = "❌ No speech detected.";
+      return;
+      }
+
+      sendToBackend(transcriptText);
+      }, 1000); // wait 1 second before sending
+    };
       sendToBackend(transcriptText);
     };
 
