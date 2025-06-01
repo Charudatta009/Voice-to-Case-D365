@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -114,3 +114,53 @@
   </script>
 </body>
 </html>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice to Case - D365 Enhanced</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <i class="fas fa-microphone-alt pulse"></i>
+        <h1>Voice-to-Case Generator</h1>
+        <h2>Dynamics 365 Enhanced</h2>
+      </div>
+      
+      <div class="controls">
+        <button id="startBtn" class="btn record-btn">
+          <i class="fas fa-microphone"></i> Start Recording
+        </button>
+        <button id="stopBtn" class="btn stop-btn" disabled>
+          <i class="fas fa-stop"></i> Stop Recording
+        </button>
+      </div>
+      
+      <div class="status-container">
+        <div id="status" class="status">
+          <i class="fas fa-circle-notch fa-spin"></i> Status: Idle
+        </div>
+      </div>
+      
+      <div class="transcript-container">
+        <div id="transcript" class="transcript"></div>
+      </div>
+      
+      <div class="wave-animation">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
