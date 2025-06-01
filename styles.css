@@ -203,7 +203,7 @@ body {
 
 /* Wave Animation */
 .wave-animation {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
