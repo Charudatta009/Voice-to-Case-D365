@@ -48,6 +48,8 @@ A voice-based customer service automation tool that listens to a user's speech, 
 
 🚀 How It Works
  -User clicks Start Recording on the frontend.
+ ![image](https://github.com/user-attachments/assets/ad73f21f-14dc-4109-b4fb-d06686610ca7)
+
 
  -Browser listens to speech and displays the live transcript.
 
