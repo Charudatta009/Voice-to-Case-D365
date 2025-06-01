@@ -48,15 +48,20 @@ A voice-based customer service automation tool that listens to a user's speech, 
 
 🚀 How It Works
  -User clicks Start Recording on the frontend.
- ![image](https://github.com/user-attachments/assets/ad73f21f-14dc-4109-b4fb-d06686610ca7)
+ ![image](https://github.com/user-attachments/assets/d309345a-4dd5-49d7-a0aa-1d9639852a8f)
+
 
 
  -Browser listens to speech and displays the live transcript.
+ ![Screenshot 2025-06-01 161054](https://github.com/user-attachments/assets/fc399be7-5c78-4a7b-a8d9-55a75e9681f6)
+
 
  -On stopping, transcript is sent to the backend to trigger the D365 flow.
 
  -Backend analyzes sentiment and derives priority.
 
  -Backend creates a Case record in D365 with the extracted details by triggering the flow.
+ ![Screenshot 2025-06-01 161257](https://github.com/user-attachments/assets/d1e3872d-441c-40b9-a80b-6e46fcb1fcc0)
+
 
  -Success message is shown on the UI.
